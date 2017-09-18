@@ -21,7 +21,7 @@ namespace _99BottlesDemo
                             $"Take one down and pass it around, {VerseNumber -1} bottle of beer on the wall.";
                     break;
                 case 1:
-                    lyric = $"One bottle of beer on the wall, one bottle of beer. \n" +
+                    lyric = $"{VerseNumber} bottle of beer on the wall, {VerseNumber} bottle of beer. \n" +
                             $"Take it down and pass it around, no more bottles of beer on the wall.";
                     break;
                 case 0:

@@ -66,7 +66,7 @@ namespace _99BottlesTest
         [Test]
         public void Test_Verse_1()
         {
-            var expectedVerse = "One bottle of beer on the wall, one bottle of beer. \n" +
+            var expectedVerse = "1 bottle of beer on the wall, 1 bottle of beer. \n" +
                         "Take it down and pass it around, no more bottles of beer on the wall.";
             Assert.AreEqual(expectedVerse, song.PrintVerse(1));
         }
@@ -97,7 +97,7 @@ namespace _99BottlesTest
             sb.AppendLine("2 bottles of beer on the wall, 2 bottles of beer. \n" +
                         "Take one down and pass it around, 1 bottle of beer on the wall.");
             sb.AppendLine();
-            sb.AppendLine("One bottle of beer on the wall, one bottle of beer. \n" +
+            sb.AppendLine("1 bottle of beer on the wall, 1 bottle of beer. \n" +
                         "Take it down and pass it around, no more bottles of beer on the wall.");
             sb.AppendLine();
             sb.AppendLine("No more bottles of beer on the wall, no more bottles of beer. \n" +
@@ -404,7 +404,7 @@ namespace _99BottlesTest
             sb.AppendLine("2 bottles of beer on the wall, 2 bottles of beer. \n" +
                         "Take one down and pass it around, 1 bottle of beer on the wall.");
             sb.AppendLine();
-            sb.AppendLine("One bottle of beer on the wall, one bottle of beer. \n" +
+            sb.AppendLine("1 bottle of beer on the wall, 1 bottle of beer. \n" +
                         "Take it down and pass it around, no more bottles of beer on the wall.");
             sb.AppendLine();
             sb.AppendLine("No more bottles of beer on the wall, no more bottles of beer. \n" +
