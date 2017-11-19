@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BottleFactory.cs" />
     <Compile Include="BottleNumber.cs" />
+    <Compile Include="BottleOne.cs" />
+    <Compile Include="BottleZero.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Song.cs" />

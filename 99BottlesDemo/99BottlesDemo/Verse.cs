@@ -13,11 +13,10 @@
 
         private string SetLyricFromNumber()
         {
-            var bottleNumber = new BottleNumber(VerseNumber);
-            var bottleNumberNext = new BottleNumber(bottleNumber.Next);
+            var bottleNumber = new BottleFactory().GetBottleNumberFor(VerseNumber);
 
             return Capitalize($"{bottleNumber} of beer on the wall, {bottleNumber} of beer. \n") +
-                $"{bottleNumber.Action}, {bottleNumberNext} of beer on the wall.";
+                $"{bottleNumber.Action}, {bottleNumber.Next} of beer on the wall.";
         }
         
         private string Capitalize(string value)
