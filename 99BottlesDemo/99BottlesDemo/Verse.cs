@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace _99BottlesDemo
+﻿namespace _99BottlesDemo
 {
     public class Verse
     {
@@ -10,14 +8,16 @@ namespace _99BottlesDemo
         public Verse(int number)
         {
             VerseNumber = number;
-            Lyric = SetLyricFromNumber(new BottleNumber(number));
+            Lyric = SetLyricFromNumber();
         }
-        private string SetLyricFromNumber(BottleNumber bottleNumber)
+
+        private string SetLyricFromNumber()
         {
-            return $"{Capitalize(bottleNumber.Quanity)} {bottleNumber.Container} of beer on the wall, " +
-                $"{bottleNumber.Quanity} {bottleNumber.Container} of beer. \n" +
-                $"{bottleNumber.Action}, " +
-                $"{bottleNumber.QuanityNext} {bottleNumber.ContainerNext} of beer on the wall.";
+            var bottleNumber = new BottleNumber(VerseNumber);
+            var bottleNumberNext = new BottleNumber(bottleNumber.Next);
+
+            return Capitalize($"{bottleNumber} of beer on the wall, {bottleNumber} of beer. \n") +
+                $"{bottleNumber.Action}, {bottleNumberNext} of beer on the wall.";
         }
         
         private string Capitalize(string value)
